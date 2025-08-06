@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: spam-shit-every-minute
+    schedule: "* * * * *"
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile

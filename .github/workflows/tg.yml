@@ -9,5 +9,11 @@ jobs:
   spam_attack:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Set perms
+        run: chmod +x ./run.sh
+      - name: where is it
+        run: ls -lah .
       - name: Run Spam Bot
         run: ./run.sh

@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Spam Bot
-        run: ~/run.sh
+        run: run.sh

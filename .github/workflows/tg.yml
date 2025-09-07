@@ -1,0 +1,13 @@
+name: shit-9000
+
+on:
+  schedule:
+    - cron: '* * * * *' # every minute
+  workflow_dispatch:
+
+jobs:
+  spam_attack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Spam Bot
+        run: ~/run.sh
